@@ -1,0 +1,9 @@
+[Unit]
+Description=MySite Service
+
+[Service]
+User=eugen
+Group=eugen
+WorkingDirectory=/demo/mysite
+EnvironmentFile=/demo/etc/mysite.env
+ExecStart=/demo/virt/bin/gunicorn config.wsgi:app --config /demo/etc/gunicorn.conf.py

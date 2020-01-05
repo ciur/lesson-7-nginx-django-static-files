@@ -1,0 +1,10 @@
+.green {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.center {
+    text-align: center;
+}
